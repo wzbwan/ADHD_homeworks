@@ -1,6 +1,6 @@
 import { DashboardData, Habit, TaskType } from '../types';
 
-const API_BASE = (import.meta as any).env?.VITE_API_BASE || 'http://localhost:4000';
+const API_BASE = (import.meta as any).env?.VITE_API_BASE || '';
 
 const handleResponse = async (res: Response) => {
   const data = await res.json();
